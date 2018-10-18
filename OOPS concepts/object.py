@@ -1,10 +1,20 @@
 //This example demostrates the creation of objects for Student class
 
-class Student:  
-   def __init__(self, rollno, name):  
+class Student:
+   """Basic student object.
+    
+   Attributes:
+       rollno: Roll id number of student.
+       name: Name of student.
+   """
+   
+   def __init__(self, rollno, name):
+      """Inits for student object."""
       self.rollno = rollno  
-      self.name = name  
-   def displayStudent(self):  
+      self.name = name
+   
+   def displayStudent(self):
+      """Display roll number and student name."""
       print("rollno : ", self.rollno,  ", name: ", self.name)  
 
 
